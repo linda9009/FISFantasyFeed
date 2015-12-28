@@ -78,7 +78,6 @@
         if ( status.imageData == nil )
             return;
         dispatch_async(dispatch_get_main_queue(), ^{
-            //            UIImage *profileImage = (UIImage *)[cell viewWithTag:4];
             UIImage *profileImage = [[UIImage alloc] initWithData:status.imageData];
             cell.imageView.image = profileImage;
             [cell setNeedsLayout];

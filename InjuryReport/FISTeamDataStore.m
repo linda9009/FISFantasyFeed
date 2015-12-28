@@ -55,8 +55,6 @@
 
 #pragma mark - Core Data Stack
 
-// Managed Object Context property getter. This is where we've dropped our "boilerplate" code.
-// If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.
 - (NSManagedObjectContext *)managedObjectContext
 {
     if (_managedObjectContext != nil) {
